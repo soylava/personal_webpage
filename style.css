@@ -1,7 +1,7 @@
 body {
-    font-family: 'azeret mono',sans-serif ;
+    font-family: 'azeret mono', sans-serif;
     font-weight: 300;
-    background-color:#dddcdd;
+    background-color: #dddcdd;
 }
 
 /* -------------------------- BARRA DE NAVEGACION -------------------------- */
@@ -20,12 +20,12 @@ nav ul {
 }
 
 nav ul ul {
-    position:absolute;
-    display:none;
+    position: absolute;
+    display: none;
 }
 
 nav ul li:hover ul {
-    display:block;
+    display: block;
 }
 
 nav ul li {
@@ -74,11 +74,11 @@ nav.fill ul li a:after {
 nav.stroke ul li a:hover:after {
     width: 100%;
 }
-  
+
 nav.fill ul li a {
     transition: all 2s;
 }
-  
+
 nav.fill ul li a:after {
     text-align: left;
     content: '.';
@@ -98,207 +98,122 @@ nav.fill ul li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
+
 /* --------------------------INDEX--------------------------*/
-    /* VISTA DESKTOP */
-    @media only screen and (min-width: 1024px){
-        .flex_index{
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        .flex_index_img, .flex_index_info{
-            width: 50vw;
-        }
-
-        .flex_index_info h1{
-            font-size: 3vw;
-        }
-
-        .flex_index_info h2{
-            font-size: 1vw;
-        }
-
-        .flex_index_info h3{
-            font-size:0.9vw;
-        }
-
-        .social_img{
-            width: 4vw;
-        }
-    }
-
-    /* VISTA MOBILE */
-    @media only screen and (max-width:1023px){
-        .flex_index{
-            display:flex;
-            flex-direction:column;
-            align-items: center;
-        }
-
-        .flex_index_img, .flex_index_info{
-            width: 100vw;
-        }
-
-        .flex_index_info h1{
-            font-size: 10vw;
-        }
-
-        .flex_index_info h2{
-            font-size: 4vw;
-        }
-
-        .flex_index_info h3{
-            font-size: 3vw;
-        }
-
-        .flex_index_info{
-            margin-top: 30px;
-        }
-
-        .social_img{
-            width: 12vw;
-        }
-    }
-
-.flex_index_img{
-    border-radius: 10px;
-}
-
-.flex_index_info {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex_index_info h1 {
-    color:black;
-    font-weight: 700;
-}
-
-.flex_index_info h2, .flex_index_info h3 {
-    color:rgb(61, 61, 61);
-}
-
-.flex_social{
-    display:flex;
-    flex-direction: row;
-}
-
-.flex_social_son {
-    display: inline-block;
+#index_img {
+    width: 100%;
 }
 
 .social_img {
-    padding: 10px;
+    width: 60px;
 }
 
 .zoom {
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 .zoom:hover {
     transform: scale(1.15);
 }
 
-/*-------------------------- ABOUT ME --------------------------*/ 
+/*-------------------------- ABOUT ME --------------------------*/
 .flexbox_aboutme__img {
     width: 25%;
     border: 2px solid black;
     box-shadow: 0 0 5px black;
-    margin-top:10px;
+    margin-top: 10px;
     margin: 100px;
 }
 
 .flexbox_aboutme__main {
-    width:60%;
+    width: 60%;
     background: #dddcdd;
     align-content: center;
     border: 3px solid black;
-    margin:100px;
+    margin: 100px;
     padding: 40px;
 }
 
 .flexbox_aboutme__main h1 {
-    color:black;
+    color: black;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
 }
 
 .flexbox_aboutme__main h3 {
-    color:rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
     font-size: 17px;
-    text-align:justify;
+    text-align: justify;
 }
 
 /*-------------------------- BLOCKCHAIN --------------------------*/
 
-    /* VISTA DESKTOP */
-    @media only screen and (min-width: 1024px){
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1024px) {
 
-        .blockchain_title h1{
-            font-size: 3.5vw;
-        }
-
-        .blockchain_title h3{
-            font-size: 1.5vw;
-        }
-
-        .card img{
-            height:150px;
-            width: 150px;
-            padding: 30px;
-        }
-
-        .grid_cardContainer{
-            display: grid;
-            grid-template-columns: repeat(4,25vw);
-            grid-template-rows: 25vw;
-        }        
+    .blockchain_title h1 {
+        font-size: 3.5vw;
     }
 
-    /* VISTA MOBILE 480 a 1024 px*/
-    @media only screen and (max-width:1023px){
-        .blockchain_title h1{
-            font-size: 5vw;
-        }
-
-        .blockchain_title h3{
-            font-size: 4vw;
-        }
-
-        .card img{
-            height:10vw;
-            width: 10vw;
-            padding: 5vw;
-        }
-
-        .grid_cardContainer{
-            display: grid;
-            grid-template-columns: repeat(4,25vw);
-            grid-template-rows: 25vw;
-        }
-        
+    .blockchain_title h3 {
+        font-size: 1.5vw;
     }
 
-    /* VISTA MOBILE 480px */
-    @media only screen and (max-width:480px){
-        .grid_cardContainer{
-            display: grid;
-            grid-template-columns: 100vw;
-            grid-template-rows: repeat(4,100vw); 
-        }
-        .card img{
-            height:30vw;
-            width: 30vw;
-            padding: 5vw;
-        }
+    .card img {
+        height: 150px;
+        width: 150px;
+        padding: 30px;
     }
 
-.blockchain_title{
+    .grid_cardContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 25vw;
+    }
+}
+
+/* VISTA MOBILE 480 a 1024 px*/
+@media only screen and (max-width:1023px) {
+    .blockchain_title h1 {
+        font-size: 5vw;
+    }
+
+    .blockchain_title h3 {
+        font-size: 4vw;
+    }
+
+    .card img {
+        height: 10vw;
+        width: 10vw;
+        padding: 5vw;
+    }
+
+    .grid_cardContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 25vw;
+    }
+
+}
+
+/* VISTA MOBILE 480px */
+@media only screen and (max-width:480px) {
+    .grid_cardContainer {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(4, 100vw);
+    }
+
+    .card img {
+        height: 30vw;
+        width: 30vw;
+        padding: 5vw;
+    }
+}
+
+.blockchain_title {
     justify-content: center;
 
 }
@@ -308,29 +223,29 @@ nav.fill ul li a:hover:after {
     padding: 20px;
 }
 
-.blockchain_title h3{
+.blockchain_title h3 {
     text-align: center;
     color: rgb(61, 61, 61);
 }
 
-.intro{
-    background:hsla(37, 100%, 96%, 0.533);
+.intro {
+    background: hsla(37, 100%, 96%, 0.533);
     padding: 20px 40px 20px 40px;
-    border-top:6px solid rgba(221, 185, 185, 0.438);
-    border-bottom:6px solid rgba(221, 185, 185, 0.438);
+    border-top: 6px solid rgba(221, 185, 185, 0.438);
+    border-bottom: 6px solid rgba(221, 185, 185, 0.438);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.card{
-    display:flex;
+.card {
+    display: flex;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.card img{
+.card img {
     /* EFECTO GRIS */
     filter: url(filters.svg#grayscale);
     /* Firefox 3.5+ */
@@ -346,116 +261,118 @@ nav.fill ul li a:hover:after {
     -webkit-filter: none;
 }
 
-#btc{
-    background:rgba(245, 39, 39, 0.65);
-    filter:drop-shadow(3px 3px 9px rgb(129, 129, 129));
+#btc {
+    background: rgba(245, 39, 39, 0.65);
+    filter: drop-shadow(3px 3px 9px rgb(129, 129, 129));
 }
 
-#eth{
-    background:rgba(35, 72, 194, 0.65);
+#eth {
+    background: rgba(35, 72, 194, 0.65);
 }
 
-#sol{
-    background:rgba(40, 192, 98, 0.65);
+#sol {
+    background: rgba(40, 192, 98, 0.65);
 }
 
-#matic{
-    background:rgba(96, 26, 161, 0.65);
+#matic {
+    background: rgba(96, 26, 161, 0.65);
 }
 
 /* -------------------------- dApps --------------------------*/
-    /* VISTA MOBILE a partir de 480 */
-    @media only screen and (min-width: 481px){
-        .terminos_title h1 {
-            text-align: left;
-        }
-        
-        .dapps_title h1{
-            text-align: right;
-        }
+/* VISTA MOBILE a partir de 480 */
+@media only screen and (min-width: 481px) {
+    .terminos_title h1 {
+        text-align: left;
     }
-    /* VISTA MOBILE 480px */
-    @media only screen and (max-width:480px){
-        .terminos_title h1 {
-            text-align: center;
-        }
-        
-        .dapps_title h1{
-            text-align: center;
-        }
+
+    .dapps_title h1 {
+        text-align: right;
     }
+}
+
+/* VISTA MOBILE 480px */
+@media only screen and (max-width:480px) {
+    .terminos_title h1 {
+        text-align: center;
+    }
+
+    .dapps_title h1 {
+        text-align: center;
+    }
+}
+
 .terminos_title h1 {
     padding: 20px;
     font-size: 50px;
 }
 
-.dapps_title h1{
+.dapps_title h1 {
     padding: 20px;
     font-size: 50px;
 }
 
-.terminos_container{
-    background:rgba(72, 161, 39, 0.533);
-    display:flex;
+.terminos_container {
+    background: rgba(72, 161, 39, 0.533);
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-top:6px solid rgba(28, 145, 34, 0.438);
-    border-bottom:6px solid rgba(28, 145, 34, 0.438);
-    padding-top:40px;
+    border-top: 6px solid rgba(28, 145, 34, 0.438);
+    border-bottom: 6px solid rgba(28, 145, 34, 0.438);
+    padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-    flex-direction:row;
+    flex-direction: row;
 }
 
-.termino_hijo{
+.termino_hijo {
     height: 330px;
-    width:250px;
+    width: 250px;
     padding: 20px;
     border: 3px solid black;
-    background:rgba(219, 219, 219, 0.533);
-    color:rgb(51, 51, 51);
+    background: rgba(219, 219, 219, 0.533);
+    color: rgb(51, 51, 51);
     border-radius: 15px;
     margin: 20px 20px 20px 10px;
 }
 
-.dapps_container{
-    background:rgba(41, 43, 201, 0.533);
-    display:flex;
+.dapps_container {
+    background: rgba(41, 43, 201, 0.533);
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-top:6px solid rgba(18, 82, 124, 0.438);
-    border-bottom:6px solid rgba(18, 82, 124, 0.438);
-    padding-top:40px;
+    border-top: 6px solid rgba(18, 82, 124, 0.438);
+    border-bottom: 6px solid rgba(18, 82, 124, 0.438);
+    padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-    flex-direction:row;
+    flex-direction: row;
 }
 
-.dapps_hijo{
-    display:flex;
+.dapps_hijo {
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 330px;
-    width:250px;
+    width: 250px;
     padding: 20px;
     border: 3px solid black;
-    background:rgba(116, 123, 179, 0.533);
-    color:rgb(209, 209, 209);
+    background: rgba(116, 123, 179, 0.533);
+    color: rgb(209, 209, 209);
     border-radius: 15px;
     margin: 20px 20px 20px 10px;
 }
 
 .dapp_logo {
-    width:30%;
-    margin:15px;
+    width: 30%;
+    margin: 15px;
 }
 
 /* -------------------------- POAPs --------------------------*/
 
 .flexbox_mainPoap {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -473,15 +390,15 @@ nav.fill ul li a:hover:after {
     color: rgb(61, 61, 61);
 }
 
-.flexbox_poap{
-    display:flex;
-    flex-direction:row;
+.flexbox_poap {
+    display: flex;
+    flex-direction: row;
     text-align: center;
 }
 
-.poap img{
+.poap img {
     justify-items: center;
-    height:100px;
+    height: 100px;
     width: 100px;
     padding: 30px;
 }
@@ -491,8 +408,8 @@ nav.fill ul li a:hover:after {
     position: relative;
     display: inline-block;
 }
-  
-  /* Tooltip text */
+
+/* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -502,33 +419,35 @@ nav.fill ul li a:hover:after {
     padding: 5px 0;
     border-radius: 6px;
 
-    /* Fade animation */ 
+    /* Fade animation */
     opacity: 0;
     transition: opacity 1s;
-   
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     width: 120px;
     top: 100%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
 }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
+
+/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
-    /* Fade animation */ 
+    /* Fade animation */
     opacity: 1;
 }
 
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
+    bottom: 100%;
+    /* At the top of the tooltip */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
-  }
+}
