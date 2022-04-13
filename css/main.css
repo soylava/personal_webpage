@@ -160,7 +160,7 @@ nav.fill ul li a:hover:after {
 /*-------------------------- BLOCKCHAIN --------------------------*/
 
 /* VISTA DESKTOP */
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
     .blockchain_title h1 {
         font-size: 3.5vw;
@@ -184,7 +184,7 @@ nav.fill ul li a:hover:after {
 }
 
 /* VISTA MOBILE 480 a 1024 px*/
-@media only screen and (max-width:1023px) {
+/*@media only screen and (max-width:1023px) {
     .blockchain_title h1 {
         font-size: 5vw;
     }
@@ -205,10 +205,10 @@ nav.fill ul li a:hover:after {
         grid-template-rows: 25vw;
     }
 
-}
+}*/
 
 /* VISTA MOBILE 480px */
-@media only screen and (max-width:480px) {
+/*@media only screen and (max-width:480px) {
     .grid_cardContainer {
         display: grid;
         grid-template-columns: 100vw;
@@ -253,8 +253,25 @@ nav.fill ul li a:hover:after {
     align-items: center;
     justify-content: center;
 }
+*/
+.margin-top-bottom-m {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-.card img {
+.margin-top-bottom-l {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.backcolor {
+    background-color: #DCDCDC;
+    color: #2A2524;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.greyscale img {
     /* EFECTO GRIS */
     filter: url(filters.svg#grayscale);
     /* Firefox 3.5+ */
@@ -264,15 +281,21 @@ nav.fill ul li a:hover:after {
     /* Google Chrome & Safari 6+ */
 }
 
-.card img:hover {
+.greyscale img:hover {
     /* EFECTO GRIS */
     filter: none;
     -webkit-filter: none;
 }
 
+
+.card img {
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+}
+
 #btc {
     background: rgba(245, 39, 39, 0.65);
-    filter: drop-shadow(3px 3px 9px rgb(129, 129, 129));
 }
 
 #eth {

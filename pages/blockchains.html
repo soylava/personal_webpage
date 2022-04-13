@@ -35,52 +35,55 @@
             <li><a href="./aboutme.html"> about me </a></li>
         </ul>
     </nav>
-
-    <header class="blockchain_title">
-        <h1>Blockchains</h1>
-        <h3>Definiendo un par de blockchains</h3>
+    <header class="container-fluid">
+        <div class="row">
+            <p class="h1 col-12 text-center">Blockchains</p>
+        </div>
+        <div class="row">
+            <p class="h4 col-12 text-center margin-top-bottom-m">Definiendo blockchains</p>
+        </div>
+        <div class="row margin-top-bottom-m">
+            <p class="text-center backcolor">La tecnologia blockchain se basa en un ledger (libro contable) donde se
+                van
+                anotando
+                las transacciones
+                que se hacen. Cada hoja de este libro contable es un bloque (block), que arranca con un codigo
+                particular que hace referencia a todo lo que habia en la pagina anterior (se encadenan las paginas), de
+                modo que si quisiera cambiar una transaccion de paginas anteriores, voy a tener que modificar tambien
+                todas las referencias iniciales que tienen las paginas posteriores, proceso que va a ser excesivamente
+                caro y complejo.
+                A este concepto se le agrega algo fundamental que son las llaves privadas, llaves publicas y address.
+                Para poder hacer una transaccion de mis crypto (vamos a hablar de transferir bitcoin para simplificar),
+                voy a tener que verificar que efectivamente soy dueño de la cantidad de bitcoin que quiera transferir.
+                Esto se hace firmando la transaccion con mi llave privada: un codigo del cual solamente yo tengo acceso.
+                Si encripto la llave privada mediante ECDSA (que es una encriptacion de un solo sentido), voy a obtener
+                la llave publica. Esta llave publica se encripta nuevamente, esta vez con SHA-256, y se obtiene el
+                address. Este address es mi direccion de correo. Si quisiera que alguien me envie bitcoin, le paso mi
+                address (nunca mi contraseña AKA private key).</p>
+        </div>
+        <div class="row">
+            <div class="card col-md-3 text-center greyscale" id="btc">
+                <a href="./blockchains/bitcoin.html">
+                    <img class="zoom" src=" ../img/btc_logo.svg">
+                </a>
+            </div>
+            <div class="card col-md-3 text-center greyscale" id="eth">
+                <a href="./blockchains/ethereum.html">
+                    <img class="zoom" src="../img/eth_logo.svg">
+                </a>
+            </div>
+            <div class="card col-md-3 text-center greyscale" id="sol">
+                <a href="./blockchains/solana.html">
+                    <img class="zoom" src="../img/sol_logo.svg">
+                </a>
+            </div>
+            <div class="card col-md-3 text-center greyscale" id="matic">
+                <a href="./blockchains/polygon.html">
+                    <img class="zoom" src="../img/matic_logo.svg">
+                </a>
+            </div>
+        </div>
     </header>
-
-    <div class="intro">
-        <h3>Blockchain 101</h3>
-        <br>
-        <p>La tecnologia blockchain se basa en un ledger (libro contable) donde se van anotando las transacciones
-            que se hacen. Cada hoja de este libro contable es un bloque (block), que arranca con un codigo
-            particular que hace referencia a todo lo que habia en la pagina anterior (se encadenan las paginas), de
-            modo que si quisiera cambiar una transaccion de paginas anteriores, voy a tener que modificar tambien
-            todas las referencias iniciales que tienen las paginas posteriores, proceso que va a ser excesivamente
-            caro y complejo.
-            A este concepto se le agrega algo fundamental que son las llaves privadas, llaves publicas y address.
-            Para poder hacer una transaccion de mis crypto (vamos a hablar de transferir bitcoin para simplificar),
-            voy a tener que verificar que efectivamente soy dueño de la cantidad de bitcoin que quiera transferir.
-            Esto se hace firmando la transaccion con mi llave privada: un codigo del cual solamente yo tengo acceso.
-            Si encripto la llave privada mediante ECDSA (que es una encriptacion de un solo sentido), voy a obtener
-            la llave publica. Esta llave publica se encripta nuevamente, esta vez con SHA-256, y se obtiene el
-            address. Este address es mi direccion de correo. Si quisiera que alguien me envie bitcoin, le paso mi
-            address (nunca mi contraseña AKA private key).</p>
-    </div>
-    <div class="grid_cardContainer">
-        <div class="card" id="btc">
-            <a href="./blockchains/bitcoin.html">
-                <img src=" ../img/btc_logo.svg">
-            </a>
-        </div>
-        <div class="card" id="eth">
-            <a href="./blockchains/ethereum.html">
-                <img src="../img/eth_logo.svg">
-            </a>
-        </div>
-        <div class="card" id="sol">
-            <a href="./blockchains/solana.html">
-                <img src="../img/sol_logo.svg">
-            </a>
-        </div>
-        <div class="card" id="matic">
-            <a href="./blockchains/polygon.html">
-                <img src="../img/matic_logo.svg">
-            </a>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
