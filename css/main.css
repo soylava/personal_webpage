@@ -1,16 +1,17 @@
 body {
     font-family: 'azeret mono', sans-serif;
     font-weight: 300;
-    background-color: #dddcdd;
+    color: #DCDCDC;
+    background-color: #484949;
 }
 
 /* -------------------------- BARRA DE NAVEGACION -------------------------- */
 nav {
     width: 100%;
     margin: 0 auto;
-    background: #dddcdd;
-    padding: 50px 0;
-    box-shadow: 0px 5px 0px #dddcdd;
+    background: #484949;
+    padding: 0px 0;
+    box-shadow: 0px 5px 0px #484949;
 }
 
 nav ul {
@@ -36,7 +37,7 @@ nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: black;
+    color: #DCDCDC;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0 10px;
@@ -49,7 +50,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-    color: #2a2b2b;
+    color: #FFCE52;
 }
 
 nav.stroke ul li a,
@@ -67,7 +68,7 @@ nav.fill ul li a:after {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #2a2b2b;
+    background: #F24B99;
     height: 2px;
 }
 
@@ -87,7 +88,7 @@ nav.fill ul li a:after {
 }
 
 nav.fill ul li a:hover {
-    color: #fff;
+    color: #F24B99;
     z-index: 1;
 }
 
@@ -100,8 +101,15 @@ nav.fill ul li a:hover:after {
 }
 
 /* --------------------------INDEX--------------------------*/
+
 #index_img {
     width: 100%;
+    border-radius: 12px;
+}
+
+.margin-for-index {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 
 .social_img {
@@ -116,6 +124,7 @@ nav.fill ul li a:hover:after {
 .zoom:hover {
     transform: scale(1.15);
 }
+
 
 /*-------------------------- ABOUT ME --------------------------*/
 .flexbox_aboutme__img {
