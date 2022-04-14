@@ -170,7 +170,7 @@ nav.fill ul li a:hover:after {
 }
 
 .backcolor {
-    background-color: #DCDCDC;
+    background-color: #dcdcdcda;
     color: #2A2524;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -243,46 +243,26 @@ nav.fill ul li a:hover:after {
 
 /* -------------------------- POAPs --------------------------*/
 
-.flexbox_mainPoap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.flexbox_mainPoap header h1 {
-    text-align: center;
-    padding: 20px;
-    font-size: 80px;
-}
-
-.flexbox_mainPoap header h3 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 30px;
-    color: rgb(61, 61, 61);
-}
-
-.flexbox_poap {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
 .poap img {
-    justify-items: center;
-    height: 100px;
-    width: 100px;
+    height: 175px;
+    width: 175px;
     padding: 30px;
 }
 
+.portrait {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+}
+
 /* Tooltip container */
-.tooltip {
+.tooltip2 {
     position: relative;
     display: inline-block;
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip2 .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -306,13 +286,13 @@ nav.fill ul li a:hover:after {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.tooltip2:hover .tooltiptext {
     visibility: visible;
     /* Fade animation */
     opacity: 1;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip2 .tooltiptext::after {
     content: " ";
     position: absolute;
     bottom: 100%;
