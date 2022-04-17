@@ -213,6 +213,58 @@ nav.fill ul li a:hover:after {
     margin: 15px;
 }
 
+/*--------------------------- NFTs ---------------------------*/
+.nft-sizing {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+}
+
+.nft-padding {
+    margin: 0px;
+    padding: 0px;
+}
+
+.encuadro {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3vw solid gold;
+    background: #dcdcdcda;
+}
+
+/* haces al div relativo, para controlar las posiciones internas */
+.nft-card {
+    position: relative;
+    margin-top: 10px;
+}
+
+/* la imagen debe centrarse automaticamente */
+.nft-card img {
+    display: block;
+    margin: 0 auto;
+    transition: opacity 0.4s
+}
+
+/* el titulo lo ubicamos en centro, pero puede moverse */
+.nft-card .nft-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+}
+
+/* cuando pones el mouse sobre el anchor, opacidad de la imagen */
+.nft-card:hover img {
+    opacity: 0.4;
+}
+
+/* cuando pones el mouse sobre el anchor, propiedades del texto */
+.nft-card:hover .nft-description {
+    color: white;
+}
+
 /* -------------------------- POAPs --------------------------*/
 
 .poap img {
