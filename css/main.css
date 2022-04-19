@@ -1,17 +1,77 @@
 body {
     font-family: 'azeret mono', sans-serif;
     font-weight: 300;
-    color: #DCDCDC;
-    background-color: #484949;
+    color: #363636;
+    background: linear-gradient(320deg, #FFCE52, #F24B99);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    -o-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 /* -------------------------- BARRA DE NAVEGACION -------------------------- */
 nav {
     width: 100%;
     margin: 0 auto;
-    background: #484949;
     padding: 0px 0;
-    box-shadow: 0px 5px 0px #484949;
 }
 
 nav ul {
@@ -50,7 +110,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-    color: #FFCE52;
+    color: #000000;
 }
 
 nav.stroke ul li a,
@@ -105,6 +165,17 @@ nav.fill ul li a:hover:after {
 #index_img {
     width: 100%;
     border-radius: 12px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+#aboutme_img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+#index_img:hover {
+    opacity: 1;
 }
 
 .margin-for-index {
@@ -142,7 +213,7 @@ nav.fill ul li a:hover:after {
 }
 
 .backcolor {
-    background-color: #dcdcdcda;
+    background-color: #dcdcdc60;
     color: #2A2524;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -164,6 +235,9 @@ nav.fill ul li a:hover:after {
     -webkit-filter: none;
 }
 
+.card {
+    height: 48vh;
+}
 
 .card img {
     height: 150px;
@@ -192,7 +266,7 @@ nav.fill ul li a:hover:after {
 .card_termino {
     padding: 20px;
     border: 3px solid #FFCE52;
-    background: #2A2524;
+    background: #2a2524c4;
     color: #FFCE52;
     border-radius: 15px;
     margin: 10px 10px 10px 5px;
@@ -202,7 +276,7 @@ nav.fill ul li a:hover:after {
     height: 330px;
     padding: 20px;
     border: 3px solid #F24B99;
-    background: #2A2524;
+    background: #2a2524be;
     color: #F24B99;
     border-radius: 15px;
     margin: 10px 10px 10px 5px;

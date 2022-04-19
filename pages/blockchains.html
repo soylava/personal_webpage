@@ -48,36 +48,45 @@
                 anotando
                 las transacciones
                 que se hacen. Cada hoja de este libro contable es un bloque (block), que arranca con un codigo
-                particular que hace referencia a todo lo que habia en la pagina anterior (se encadenan las paginas), de
-                modo que si quisiera cambiar una transaccion de paginas anteriores, voy a tener que modificar tambien
-                todas las referencias iniciales que tienen las paginas posteriores, proceso que va a ser excesivamente
+                particular que hace referencia a todo lo que habia en la pagina anterior (se encadenan las paginas),
+                de
+                modo que si quisiera cambiar una transaccion de paginas anteriores, voy a tener que modificar
+                tambien
+                todas las referencias iniciales que tienen las paginas posteriores, proceso que va a ser
+                excesivamente
                 caro y complejo.
-                A este concepto se le agrega algo fundamental que son las llaves privadas, llaves publicas y address.
-                Para poder hacer una transaccion de mis crypto (vamos a hablar de transferir bitcoin para simplificar),
-                voy a tener que verificar que efectivamente soy dueño de la cantidad de bitcoin que quiera transferir.
-                Esto se hace firmando la transaccion con mi llave privada: un codigo del cual solamente yo tengo acceso.
-                Si encripto la llave privada mediante ECDSA (que es una encriptacion de un solo sentido), voy a obtener
+                A este concepto se le agrega algo fundamental que son las llaves privadas, llaves publicas y
+                address.
+                Para poder hacer una transaccion de mis crypto (vamos a hablar de transferir bitcoin para
+                simplificar),
+                voy a tener que verificar que efectivamente soy dueño de la cantidad de bitcoin que quiera
+                transferir.
+                Esto se hace firmando la transaccion con mi llave privada: un codigo del cual solamente yo tengo
+                acceso.
+                Si encripto la llave privada mediante ECDSA (que es una encriptacion de un solo sentido), voy a
+                obtener
                 la llave publica. Esta llave publica se encripta nuevamente, esta vez con SHA-256, y se obtiene el
-                address. Este address es mi direccion de correo. Si quisiera que alguien me envie bitcoin, le paso mi
+                address. Este address es mi direccion de correo. Si quisiera que alguien me envie bitcoin, le paso
+                mi
                 address (nunca mi contraseña AKA private key).</p>
         </div>
         <div class="row">
-            <div class="card col-md-3 text-center greyscale" id="btc">
+            <div class="card col-md-3 text-center greyscale justify-content-center" id="btc">
                 <a href="./blockchains/bitcoin.html">
                     <img class="zoom" src=" ../img/btc_logo.svg">
                 </a>
             </div>
-            <div class="card col-md-3 text-center greyscale" id="eth">
+            <div class="card col-md-3 text-center greyscale justify-content-center" id="eth">
                 <a href="./blockchains/ethereum.html">
                     <img class="zoom" src="../img/eth_logo.svg">
                 </a>
             </div>
-            <div class="card col-md-3 text-center greyscale" id="sol">
+            <div class="card col-md-3 text-center greyscale justify-content-center" id="sol">
                 <a href="./blockchains/solana.html">
                     <img class="zoom" src="../img/sol_logo.svg">
                 </a>
             </div>
-            <div class="card col-md-3 text-center greyscale" id="matic">
+            <div class="card col-md-3 text-center greyscale justify-content-center" id="matic">
                 <a href="./blockchains/polygon.html">
                     <img class="zoom" src="../img/matic_logo.svg">
                 </a>
