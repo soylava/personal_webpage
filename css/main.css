@@ -1,228 +1,301 @@
 body {
-  font-family: "azeret mono", sans-serif;
-  font-weight: 300;
-  color: #363636;
-  background: linear-gradient(320deg, #FFCE52, #F24B99);
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 8s ease infinite;
-  -moz-animation: AnimationName 8s ease infinite;
-  -o-animation: AnimationName 8s ease infinite;
-  animation: AnimationName 8s ease infinite; }
+    font-family: "azeret mono", sans-serif;
+    font-weight: 300;
+    color: #363636;
+    background: linear-gradient(320deg, #FFCE52, #F24B99);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    -o-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
 
 @-webkit-keyframes AnimationName {
-  0% { }
-  background-position: 0% 50%;
-  50% { }
-  background-position: 100% 50%;
-  100% { }
-  background-position: 0% 50%; }
+    0% {}
+
+    background-position: 0% 50%;
+
+    50% {}
+
+    background-position: 100% 50%;
+
+    100% {}
+
+    background-position: 0% 50%;
+}
 
 @-moz-keyframes AnimationName {
-  0% { }
-  background-position: 0% 50%;
-  50% { }
-  background-position: 100% 50%;
-  100% { }
-  background-position: 0% 50%; }
+    0% {}
+
+    background-position: 0% 50%;
+
+    50% {}
+
+    background-position: 100% 50%;
+
+    100% {}
+
+    background-position: 0% 50%;
+}
 
 @-o-keyframes AnimationName {
-  0% { }
-  background-position: 0% 50%;
-  50% { }
-  background-position: 100% 50%;
-  100% { }
-  background-position: 0% 50%; }
+    0% {}
+
+    background-position: 0% 50%;
+
+    50% {}
+
+    background-position: 100% 50%;
+
+    100% {}
+
+    background-position: 0% 50%;
+}
 
 @keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 .zoom {
-  transition: transform .2s;
-  /* Animation */ }
+    transition: transform .2s;
+    /* Animation */
+}
 
 .zoom:hover {
-  transform: scale(1.15); }
+    transform: scale(1.15);
+}
 
 nav {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px 0; }
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0;
+}
 
 nav ul {
-  position: relative;
-  list-style: none;
-  text-align: center; }
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
 
 nav ul ul {
-  position: absolute;
-  display: none; }
+    position: absolute;
+    display: none;
+}
 
 nav ul li:hover ul {
-  display: block; }
+    display: block;
+}
 
 nav ul li {
-  display: inline-block; }
+    display: inline-block;
+}
 
 nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: #DCDCDC;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0 10px; }
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #DCDCDC;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
 
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s; }
+    transition: all .5s;
+}
 
 nav ul li a:hover {
-  color: #000000; }
+    color: #000000;
+}
 
 nav.stroke ul li a,
 nav.fill ul li a {
-  position: relative; }
+    position: relative;
+}
 
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #F24B99;
-  height: 2px; }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #F24B99;
+    height: 2px;
+}
 
 nav.stroke ul li a:hover:after {
-  width: 100%; }
+    width: 100%;
+}
 
 nav.fill ul li a {
-  transition: all 2s; }
+    transition: all 2s;
+}
 
 nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0; }
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
 
 nav.fill ul li a:hover {
-  color: #F24B99;
-  z-index: 1; }
+    color: #F24B99;
+    z-index: 1;
+}
 
 nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1; }
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
 
 #index_img {
-  width: 100%;
-  border-radius: 12px;
-  opacity: 0.5;
-  transition: opacity 0.5s; }
+    width: 100%;
+    border-radius: 12px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
 
 #aboutme_img {
-  width: 100%;
-  border-radius: 12px; }
+    width: 100%;
+    border-radius: 12px;
+}
 
 #index_img:hover {
-  opacity: 1; }
+    opacity: 1;
+}
 
 .margin-for-index {
-  margin-top: 6vh;
-  margin-bottom: 6vh; }
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
 
 .social_img {
-  width: 60px; }
+    width: 60px;
+}
 
 .margin-top-bottom-m {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .margin-top-bottom-l {
-  margin-top: 40px;
-  margin-bottom: 40px; }
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 .backcolor {
-  background-color: #dcdcdc60;
-  color: #2A2524;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+    background-color: #dcdcdc60;
+    color: #2A2524;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 .greyscale img {
-  filter: url(filters.svg#grayscale);
-  filter: gray;
-  -webkit-filter: grayscale(1); }
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
 
 .greyscale:hover {
-  filter: none;
-  -webkit-filter: none; }
+    filter: none;
+    -webkit-filter: none;
+}
 
 .card {
-  height: 48vh; }
-  .card img {
+    height: 48vh;
+}
+
+.card img {
     height: 150px;
     width: 150px;
-    padding: 30px; }
+    padding: 30px;
+}
 
 #btc {
-  background: #ff5252; }
+    background: #ff5252;
+}
 
 #eth {
-  background: #4b4ef2; }
+    background: #4b4ef2;
+}
 
 #sol {
-  background: #34c274; }
+    background: #34c274;
+}
 
 #matic {
-  background: #b92fa2; }
+    background: #b92fa2;
+}
 
 .nft-sizing {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 10px; }
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+}
 
 .nft-padding {
-  margin: 0px;
-  padding: 0px; }
+    margin: 0px;
+    padding: 0px;
+}
 
 .nft-card {
-  position: relative;
-  margin-top: 10px; }
-  .nft-card img {
+    position: relative;
+    margin-top: 10px;
+}
+
+.nft-card img {
     display: block;
     margin: 0 auto;
-    transition: opacity 0.4s; }
-  .nft-card .nft-description {
+    transition: opacity 0.4s;
+}
+
+.nft-card .nft-description {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: transparent; }
-  .nft-card:hover img {
-    opacity: 0.4; }
-  .nft-card:hover .nft-description {
-    color: white; }
+    color: transparent;
+}
+
+.nft-card:hover img {
+    opacity: 0.4;
+}
+
+.nft-card:hover .nft-description {
+    color: white;
+}
 
 .poap img {
-  height: 175px;
-  width: 175px;
-  padding: 30px; }
+    height: 175px;
+    width: 175px;
+    padding: 30px;
+}
 
 .tooltip2 {
-  position: relative;
-  display: inline-block; }
-  .tooltip2 .tooltiptext {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip2 .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -237,11 +310,15 @@ nav.fill ul li a:hover:after {
     width: 120px;
     top: 100%;
     left: 50%;
-    margin-left: -60px; }
-  .tooltip2:hover .tooltiptext {
+    margin-left: -60px;
+}
+
+.tooltip2:hover .tooltiptext {
     visibility: visible;
-    opacity: 1; }
-  .tooltip2 .tooltiptext::after {
+    opacity: 1;
+}
+
+.tooltip2 .tooltiptext::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -249,28 +326,33 @@ nav.fill ul li a:hover:after {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent; }
+    border-color: transparent transparent black transparent;
+}
 
 .card_termino {
-  padding: 20px;
-  border: 3px solid #FFCE52;
-  background: #2a2524be;
-  color: #FFCE52;
-  border-radius: 15px;
-  margin: 10px 10px 10px 5px; }
+    padding: 20px;
+    border: 3px solid #FFCE52;
+    background: #2a2524be;
+    color: #FFCE52;
+    border-radius: 15px;
+    margin: 10px 10px 10px 5px;
+}
 
 .card_dapp {
-  height: 330px;
-  padding: 20px;
-  border: 3px solid #F24B99;
-  background: #2a2524be;
-  color: #F24B99;
-  border-radius: 15px;
-  margin: 10px 10px 10px 5px; }
+    height: 330px;
+    padding: 20px;
+    border: 3px solid #F24B99;
+    background: #2a2524be;
+    color: #F24B99;
+    border-radius: 15px;
+    margin: 10px 10px 10px 5px;
+}
 
 .dapp_logo {
-  width: 10%;
-  margin: 15px; }
+    width: 10%;
+    margin: 15px;
+}
 
 .about {
-  border: 6px solid #DCDCDC; }
+    border: 6px solid #DCDCDC;
+}
