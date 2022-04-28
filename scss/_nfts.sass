@@ -7,19 +7,13 @@
     margin: 0px
     padding: 0px
 
-/* haces al div relativo, para controlar las posiciones internas */
 .nft-card
     position: relative
     margin-top: 10px
-
-/* la imagen debe centrarse automaticamente */
-
     & img
         display: block
         margin: 0 auto
         transition: opacity 0.4s
-
-/* el titulo lo ubicamos en centro, pero puede moverse */
 
     & .nft-description
         position: absolute
@@ -28,12 +22,8 @@
         transform: translate(-50%, -50%)
         color: transparent
 
-/* cuando pones el mouse sobre el anchor, opacidad de la imagen */
-
     &:hover img
         opacity: 0.4
-
-/* cuando pones el mouse sobre el anchor, propiedades del texto */
 
     &:hover .nft-description
         color: white
