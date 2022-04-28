@@ -1,0 +1,48 @@
+.margin-top-bottom-m
+    margin-top: 20px
+    margin-bottom: 20px
+
+.margin-top-bottom-l
+    margin-top: 40px
+    margin-bottom: 40px
+
+.backcolor
+    background-color: $light-grey-transparent
+    color: $dark-grey
+    padding-top: 40px
+    padding-bottom: 40px
+
+.greyscale
+    img
+        /* EFECTO GRIS */
+        filter: url(filters.svg#grayscale)
+        /* Firefox 3.5+ */
+        filter: gray
+        /* IE6-9 */
+        -webkit-filter: grayscale(1)
+        /* Google Chrome & Safari 6+ */
+
+    &:hover
+    /* EFECTO GRIS */
+        filter: none
+        -webkit-filter: none
+
+.card
+    height: 48vh
+
+    & img
+        height: 150px
+        width: 150px
+        padding: 30px
+
+#btc
+    background: $red
+
+#eth
+    background: $blue
+
+#sol
+    background: $green
+
+#matic
+    background: $violet

@@ -1,0 +1,51 @@
+.poap img
+    height: 175px
+    width: 175px
+    padding: 30px
+
+/* Contenedor del tooltip */
+.tooltip2
+    position: relative
+    display: inline-block
+
+/* texto del tooltip */
+
+    & .tooltiptext
+        visibility: hidden
+        width: 120px
+        background-color: black
+        color: #fff
+        text-align: center
+        padding: 5px 0
+        border-radius: 6px
+
+    /* Fade */
+        opacity: 0
+        transition: opacity 1s
+
+    /* Posicion del tooltip text */
+        position: absolute
+        z-index: 1
+        width: 120px
+        top: 100%
+        left: 50%
+        margin-left: -60px
+
+/* muestra el tooltip al hover */
+
+    &:hover .tooltiptext
+        visibility: visible
+    /* Fade animation */
+        opacity: 1
+
+
+    & .tooltiptext::after
+        content: " "
+        position: absolute
+        bottom: 100%
+    /* At the top of the tooltip */
+        left: 50%
+        margin-left: -5px
+        border-width: 5px
+        border-style: solid
+        border-color: transparent transparent black transparent

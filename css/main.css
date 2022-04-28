@@ -347,13 +347,13 @@ nav.fill ul li a:hover:after {
     padding: 30px;
 }
 
-/* Tooltip container */
+/* Contenedor del tooltip */
 .tooltip2 {
     position: relative;
     display: inline-block;
 }
 
-/* Tooltip text */
+/* texto del tooltip */
 .tooltip2 .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -363,21 +363,20 @@ nav.fill ul li a:hover:after {
     padding: 5px 0;
     border-radius: 6px;
 
-    /* Fade animation */
+    /* Fade */
     opacity: 0;
     transition: opacity 1s;
 
-    /* Position the tooltip text - see examples below! */
+    /* Posicion del tooltip text */
     position: absolute;
     z-index: 1;
     width: 120px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
-    /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+/* muestra el tooltip al hover */
 .tooltip2:hover .tooltiptext {
     visibility: visible;
     /* Fade animation */
